@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cloudinary Test</title>
-</head>
-<body>
-  <h1>Cloudinary Test</h1>
-  <p>Hi!</p>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudinary Test</title>
+    <script src='node_modules/jquery/dist/jquery.min.js' type='text/javascript'></script>
+    <script src="node_modules/blueimp-file-upload/js/vendor/jquery.ui.widget.js" type="text/javascript"></script>
+    <script src="node_modules/blueimp-file-upload/js/jquery.iframe-transport.js" type="text/javascript"></script>
+    <script src="node_modules/blueimp-file-upload/js/jquery.fileupload.js" type="text/javascript"></script>
+    <script src="node_modules/cloudinary-jquery-file-upload/cloudinary-jquery-file-upload.js" type="text/javascript"></script>
+    <script src="js/emily-upload-image.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1>Cloudinary Test</h1>
+    <!-- <form action="index.html" method="post"> -->
+    <div class="form-box">
+      <input  name="file" type="file"
+              class="cloudinary-fileupload"
+              data-cloudinary-field="image_id"
+              data-form-data='{&quot;upload_preset&quot;:&quot;vvqon8nr&quot;,&quot;callback&quot;: &quot;https://www.example.com/cloudinary_cors.html&quot;}'>
+      </input>
+    <!-- </form> -->
+      <div class="progress_bar"></div>
+    </div>
+    <div class="preview"></div>
+  </body>
 </html>
